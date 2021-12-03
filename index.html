@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Year Anniverary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="section-1">
+        <img src="./img/Background1.png" alt="">
+    </section>
+    <section class="section-2">
+        <h1 class="section-2--header">One Year Together</h1>
+        <div class="time-line">
+            <div class="line"></div>
+            <div class="bullets bullets-1"></div>
+            <div class="bullets bullets-2"></div>
+            <div class="bullets bullets-3"></div>
+            <div class="bullets bullets-4"></div>
+            <div class="bullets bullets-5"></div>
+            <p class="text first-date">26/12/2020</p>
+            <p class="text months-2">2 months</p>
+            <p class="text text-2">3 - 5</p>
+            <p class="text text-3">6 - 7</p>
+            <p class="text text-4">8 - 12</p>
+            <p class="text one-year">26/12/2021</p>
+            <img src="./img/love-1.png" alt="" class="love-1">
+            <img src="./img/love-2.png" alt="" class="love-2">
+            <img src="./img/love-3.png" alt="" class="love-3">
+            <img src="./img/love-4.png" alt="" class="love-4">
+            <img src="./img/love-5.png" alt="" class="love-5">
+        </div>
+        <img src="./img/image 6.png" alt="" class="sun">
+    </section>
+    <div class="modal display-none">
+        <div class="overlay"></div>
+        <div class="card">
+            <img src="./img/first-date.jpg" alt="" class="card-img">
+            <p class="card-text">Nơi tình yêu bắt đầu ^^</p>
+            <img src="./img/image 2.png" alt="" class="card-icon">
+            <div class="card-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const firstBullet = document.querySelector('.bullets-1')
+        const modal = document.querySelector('.modal')
+        firstBullet.addEventListener('click', function() {
+            modal.classList.remove('display-none')
+        })
+    </script>
+</body>
+</html>
