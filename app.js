@@ -1,12 +1,15 @@
 const bullets = document.querySelectorAll('.bullets')
 const lineAnimation = document.querySelector('.line-animation')
 const lineAniWidth = ['1050px', '890px', '650px', '490px', 0]
-for (let i = 0; i < bullets.length; i++) {
-    bullets[i].addEventListener('click', function() {
-        openModal(i+1, bullets[i])
-        
+
+bullets.forEach((bullet, index) => {
+    bullet.addEventListener('click', function() {
+        if (index == 0) {
+            hideArrow()
+        }
+        openModal(index+1, bullet)
     })
-}
+})
 
 function openModal(index, bullet) {
     const modal = document.querySelector(`.modal-${index}`)
@@ -19,4 +22,9 @@ function openModal(index, bullet) {
             bullet.classList.add('timeDone')
         }
     })
+}
+
+function hideArrow() {
+    const arrow = document.querySelector('.first-date-arrow')
+    arrow.classList.add('display-none')
 }
