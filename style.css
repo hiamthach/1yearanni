@@ -364,6 +364,11 @@ body {
   margin-top: 26px;
 }
 
+.modal-5 .card-text {
+  max-width: 490px;
+  margin-top: 26px;
+}
+
 .display-none {
   display: none;
 }
